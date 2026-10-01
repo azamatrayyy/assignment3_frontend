@@ -1,0 +1,70 @@
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.2rem; }
+p  { font-size: 0.9rem; }
+.box-container {
+    display: flex;
+    gap: 20px;
+}
+
+.box-item {
+    background-color: #0d6efd;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.card, .sidebar {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f8f9fa;
+}
+
+footer {
+    border-top: 1px solid #ddd;
+    background-color: #f1f1f1;
+}
+
+@media (max-width: 575px) {
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.3rem; }
+    p  { font-size: 0.85rem; }
+
+    .box-container {
+        flex-direction: column;
+    }
+    .desktop-only-note {
+        display: none;
+    }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.6rem; }
+    p  { font-size: 0.95rem; }
+
+    .box-container {
+        flex-direction: row;
+        flex-wrap: wrap; 
+    }
+    .box-item {
+        width: 48%;
+    }
+}
+@media (min-width: 993px) { 
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    p  { font-size: 1.1rem; }
+
+    .box-container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .box-item {
+        width: 32%;
+    }
+    .desktop-only-note {
+        display: block;
+    }
+}
